@@ -1,10 +1,22 @@
-import { profile } from "@/data/portfolio";
+import { profile, projects, services, skills } from "@/data/portfolio";
 
 const highlights = [
-  "Responsive Design",
-  "Web Applications",
-  "Database Systems",
-  "Modern Web Technologies",
+  {
+    value: String(projects.length).padStart(2, "0"),
+    label: "Portfolio Projects",
+  },
+  {
+    value: String(services.length).padStart(2, "0"),
+    label: "Core Services",
+  },
+  {
+    value: String(skills.length).padStart(2, "0"),
+    label: "Technologies",
+  },
+  {
+    value: "100%",
+    label: "Responsive by Design",
+  },
 ];
 
 export default function Hero() {
@@ -95,14 +107,25 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Proof / capability strip */}
         <div className="mt-20 border-t border-white/10 pt-7">
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {highlights.map((highlight) => (
+          <div className="grid gap-0 sm:grid-cols-2 lg:grid-cols-4">
+            {highlights.map((highlight, index) => (
               <div
-                key={highlight}
-                className="text-xs text-white/40 transition hover:text-[#ffd400]"
+                key={highlight.label}
+                className={`group px-0 py-4 transition duration-300 hover:text-[#ffd400] ${
+                  index !== 0
+                    ? "border-white/10 sm:border-l sm:pl-6 lg:border-l"
+                    : ""
+                }`}
               >
-                {highlight}
+                <p className="text-2xl font-black tracking-tight text-white transition-colors duration-300 group-hover:text-[#ffd400]">
+                  {highlight.value}
+                </p>
+
+                <p className="mt-1 text-xs uppercase tracking-[0.18em] text-white/35">
+                  {highlight.label}
+                </p>
               </div>
             ))}
           </div>

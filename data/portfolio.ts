@@ -57,6 +57,17 @@ export const projects = [
     featured: true,
     description:
       "The Nyandarua Online Election and Referendum Management System (NOERMS) is a digital election platform being developed to support student elections through candidate nominations, eligibility verification, IECNP administration, election management, voting, results management, reporting, audit trails and election archiving.",
+    technologies: [
+      "ASP.NET Core",
+      "PostgreSQL",
+      "C#",
+      "Git & GitHub",
+    ],
+    highlights: [
+      "Election management workflows",
+      "Voting and results management",
+      "Reporting and audit trails",
+    ],
   },
   {
     title: "Portfolio Website",
@@ -65,14 +76,17 @@ export const projects = [
     featured: false,
     description:
       "A professional personal portfolio platform created to showcase my technical skills, projects and services while connecting me with clients and technology opportunities in Kenya and internationally.",
-  },
-  {
-    title: "NYAPOTA Digital Platform",
-    category: "Student Communication",
-    status: "Concept",
-    featured: false,
-    description:
-      "A proposed digital platform designed to improve communication between students, student leaders, class representatives, clubs, societies and the wider student community.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    highlights: [
+      "Professional personal branding",
+      "Responsive user experience",
+      "Client-focused project presentation",
+    ],
   },
   {
     title: "Savanna Grill & Restaurant",
@@ -81,6 +95,17 @@ export const projects = [
     featured: false,
     description:
       "A modern African-inspired restaurant website built as a portfolio demo project using Next.js and TypeScript. It features an interactive menu, food gallery, reservations, testimonials, contact information and WhatsApp ordering functionality.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    highlights: [
+      "Restaurant customer experience",
+      "Online reservations and ordering",
+      "Responsive modern web design",
+    ],
     liveUrl: "https://savanna-grill-snowy.vercel.app",
     sourceUrl: "https://github.com/totieno519/savanna-grill",
   },

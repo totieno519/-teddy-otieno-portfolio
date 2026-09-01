@@ -111,9 +111,46 @@ export default function Projects() {
                     )}
                   </div>
 
+                  {/* Description */}
                   <p className="mt-5 max-w-3xl leading-7 text-white/45">
                     {project.description}
                   </p>
+
+                  {/* Project highlights */}
+                  <div className="mt-7">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">
+                      What it demonstrates
+                    </p>
+
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {project.highlights.map((highlight) => (
+                        <span
+                          key={highlight}
+                          className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-white/55 transition duration-300 group-hover:border-white/15 group-hover:text-white/70"
+                        >
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="mt-6">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">
+                      Built with
+                    </p>
+
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {project.technologies.map((technology) => (
+                        <span
+                          key={technology}
+                          className="rounded-full border border-[#ffd400]/15 bg-[#ffd400]/[0.04] px-3 py-1.5 text-xs font-medium text-[#ffd400]/75 transition duration-300 group-hover:border-[#ffd400]/30 group-hover:text-[#ffd400]"
+                        >
+                          {technology}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
 
                   {/* Project CTA */}
                   {project.title === "NOERMS" && (
@@ -123,7 +160,6 @@ export default function Projects() {
                         className="inline-flex items-center text-sm font-bold text-[#ffd400] transition-colors hover:text-[#ffe45c]"
                       >
                         Discuss this project
-
                         <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                           →
                         </span>
