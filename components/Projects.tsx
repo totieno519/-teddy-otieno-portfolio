@@ -46,7 +46,6 @@ export default function Projects() {
                     isFeatured ? "aspect-[2.2/1]" : "aspect-[16/10]"
                   }`}
                 >
-                  {/* Background decoration */}
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,212,0,0.08),transparent_35%)]" />
 
                   <div className="absolute inset-0 bg-[linear-gradient(135deg,transparent_35%,rgba(255,255,255,0.045))]" />
@@ -116,50 +115,14 @@ export default function Projects() {
                     {project.description}
                   </p>
 
-                  {/* Project highlights */}
-                  <div className="mt-7">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">
-                      What it demonstrates
-                    </p>
-
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {project.highlights.map((highlight) => (
-                        <span
-                          key={highlight}
-                          className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-white/55 transition duration-300 group-hover:border-white/15 group-hover:text-white/70"
-                        >
-                          {highlight}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Technologies */}
-                  <div className="mt-6">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">
-                      Built with
-                    </p>
-
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {project.technologies.map((technology) => (
-                        <span
-                          key={technology}
-                          className="rounded-full border border-[#ffd400]/15 bg-[#ffd400]/[0.04] px-3 py-1.5 text-xs font-medium text-[#ffd400]/75 transition duration-300 group-hover:border-[#ffd400]/30 group-hover:text-[#ffd400]"
-                        >
-                          {technology}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Project CTA */}
+                  {/* NOERMS CTA */}
                   {project.title === "NOERMS" && (
                     <div className="mt-7">
                       <a
                         href="#contact"
                         className="inline-flex items-center text-sm font-bold text-[#ffd400] transition-colors hover:text-[#ffe45c]"
                       >
-                        Discuss this project
+                        Discuss a Similar Solution
                         <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                           →
                         </span>
@@ -199,19 +162,25 @@ export default function Projects() {
           })}
         </div>
 
-        {/* Portfolio statement */}
-        <div className="mt-16 flex flex-col justify-between gap-5 border-t border-white/10 pt-7 sm:flex-row sm:items-center">
-          <p className="max-w-xl text-sm leading-7 text-white/35">
-            Every project starts with understanding the problem, then choosing
-            the right technology to build a practical solution.
-          </p>
+        {/* Client conversion CTA */}
+        <div className="mt-16 flex flex-col justify-between gap-6 border-t border-white/10 pt-8 sm:flex-row sm:items-center">
+          <div>
+            <p className="text-sm font-semibold text-white">
+              Have an idea that needs to become a digital solution?
+            </p>
+
+            <p className="mt-2 text-sm leading-6 text-white/35">
+              Let&apos;s discuss your goals, requirements and the right way to
+              bring your project to life.
+            </p>
+          </div>
 
           <a
             href="#contact"
-            className="inline-flex w-fit items-center text-sm font-bold text-white transition-colors hover:text-[#ffd400]"
+            className="inline-flex w-fit shrink-0 items-center rounded-full bg-[#ffd400] px-6 py-3 text-sm font-bold text-black transition duration-300 hover:-translate-y-1 hover:bg-[#ffe45c]"
           >
-            Have a project in mind?
-            <span className="ml-2 text-[#ffd400]">↗</span>
+            Start a Project
+            <span className="ml-2">↗</span>
           </a>
         </div>
       </div>
