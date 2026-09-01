@@ -123,12 +123,40 @@ export default function Projects() {
                         className="inline-flex items-center text-sm font-bold text-[#ffd400] transition-colors hover:text-[#ffe45c]"
                       >
                         Discuss this project
+
                         <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                           →
                         </span>
                       </a>
                     </div>
                   )}
+
+                  {/* Savanna Grill project links */}
+                  {project.title === "Savanna Grill & Restaurant" &&
+                    project.liveUrl &&
+                    project.sourceUrl && (
+                      <div className="mt-7 flex flex-wrap gap-3">
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center rounded-full bg-[#ffd400] px-5 py-2.5 text-sm font-bold text-black transition duration-300 hover:scale-[1.03] hover:bg-[#ffe45c]"
+                        >
+                          View Live Website
+                          <span className="ml-2">↗</span>
+                        </a>
+
+                        <a
+                          href={project.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-bold text-white transition duration-300 hover:border-[#ffd400]/50 hover:text-[#ffd400]"
+                        >
+                          View Source Code
+                          <span className="ml-2">↗</span>
+                        </a>
+                      </div>
+                    )}
                 </div>
               </article>
             );

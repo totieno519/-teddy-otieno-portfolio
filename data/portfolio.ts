@@ -74,4 +74,14 @@ export const projects = [
     description:
       "A proposed digital platform designed to improve communication between students, student leaders, class representatives, clubs, societies and the wider student community.",
   },
+  {
+    title: "Savanna Grill & Restaurant",
+    category: "Restaurant Website",
+    status: "Completed — Demo Project",
+    featured: false,
+    description:
+      "A modern African-inspired restaurant website built as a portfolio demo project using Next.js and TypeScript. It features an interactive menu, food gallery, reservations, testimonials, contact information and WhatsApp ordering functionality.",
+    liveUrl: "https://savanna-grill-snowy.vercel.app",
+    sourceUrl: "https://github.com/totieno519/savanna-grill",
+  },
 ];
