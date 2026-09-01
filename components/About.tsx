@@ -3,19 +3,19 @@ const strengths = [
     number: "01",
     title: "Problem Solving",
     description:
-      "I start by understanding the problem before deciding what technology or approach should be used.",
+      "I begin by understanding the real challenge, the people affected by it and the outcome the solution needs to achieve.",
   },
   {
     number: "02",
-    title: "Practical Development",
+    title: "Practical Solutions",
     description:
-      "I focus on building solutions that are useful, maintainable and designed around real users.",
+      "I focus on creating digital products that are useful, reliable and simple for people to understand and use.",
   },
   {
     number: "03",
     title: "Continuous Growth",
     description:
-      "I continuously expand my technical skills by building real systems and learning from every project.",
+      "I keep improving through hands-on projects, new challenges and continuous learning in the ever-changing digital space.",
   },
 ];
 
@@ -39,24 +39,24 @@ export default function About() {
 
           <div>
             <p className="text-xl leading-9 text-white/70 sm:text-2xl sm:leading-10">
-              I&apos;m Teddy Otieno, an ICT developer passionate about using
-              technology to solve practical problems and create useful digital
-              experiences.
+              I&apos;m Teddy Otieno, a web developer and digital solutions
+              builder passionate about using technology to solve practical
+              problems and create useful digital experiences.
             </p>
 
             <p className="mt-7 max-w-3xl leading-8 text-white/45">
-              My work focuses on web development, web applications and
-              database-driven systems. I enjoy taking an idea from its early
-              concept, understanding the requirements and turning it into a
-              functional digital product.
+              I build professional websites, web applications and digital
+              systems designed around the needs of their users. I enjoy taking
+              an idea from its early concept, understanding what is required
+              and turning it into a functional solution.
             </p>
 
             <p className="mt-6 max-w-3xl leading-8 text-white/45">
-              I&apos;m particularly interested in building systems that
-              improve how people communicate, manage information and interact
-              with organizations. My current work includes NOERMS, an
-              election and referendum management system being developed as a
-              practical real-world project.
+              My approach is centered on understanding the problem first,
+              communicating clearly and building solutions with purpose. I
+              work on projects that help people, businesses and organizations
+              establish a stronger digital presence, improve their processes
+              and serve their users better.
             </p>
 
             <a

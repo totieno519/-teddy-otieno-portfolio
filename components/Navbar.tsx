@@ -8,6 +8,7 @@ const navItems = [
   { label: "Skills", href: "#skills" },
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -124,7 +125,7 @@ export default function Navbar() {
         id="mobile-navigation"
         className={`overflow-hidden border-t border-white/10 transition-all duration-300 md:hidden ${
           menuOpen
-            ? "max-h-[32rem] opacity-100"
+            ? "max-h-[40rem] opacity-100"
             : "max-h-0 border-t-transparent opacity-0"
         }`}
       >

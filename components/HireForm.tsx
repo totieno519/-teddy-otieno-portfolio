@@ -84,12 +84,12 @@ export default function HireForm() {
         </div>
 
         <h3 className="mt-7 text-3xl font-black tracking-tight text-white">
-          Thanks for reaching out.
+          Your inquiry has been received.
         </h3>
 
         <p className="mt-4 max-w-xl leading-8 text-white/45">
-          Your project inquiry has been submitted successfully. I&apos;ll
-          review the details and get back to you as soon as possible.
+          Thank you for sharing your project. I&apos;ll review the information
+          you provided and get back to you as soon as possible.
         </p>
 
         <button
@@ -117,12 +117,13 @@ export default function HireForm() {
         </p>
 
         <h3 className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
-          Tell me about your project.
+          Let&apos;s talk about your project.
         </h3>
 
         <p className="mt-4 max-w-2xl leading-7 text-white/40">
-          Give me a few details about what you want to build. The more
-          information you provide, the better I can understand your needs.
+          Share a few details about what you need, what you want to achieve
+          and the type of solution you have in mind. This gives me a better
+          starting point for our conversation.
         </p>
       </div>
 
@@ -195,7 +196,7 @@ export default function HireForm() {
             htmlFor="projectType"
             className="mb-2 block text-sm font-semibold text-white/70"
           >
-            Project type
+            What do you need?
           </label>
 
           <select
@@ -206,7 +207,7 @@ export default function HireForm() {
             className="h-13 w-full rounded-xl border border-white/10 bg-[#111318] px-4 text-sm text-white outline-none transition focus:border-[#ffd400]/60"
           >
             <option value="" disabled>
-              Select project type
+              Select a project type
             </option>
 
             {projectTypes.map((type) => (
@@ -259,7 +260,7 @@ export default function HireForm() {
             name="message"
             required
             rows={7}
-            placeholder="What are you trying to build? What problem should it solve? Do you have a deadline?"
+            placeholder="What do you want to build? What problem should it solve? Do you have a preferred deadline or any important requirements?"
             className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm leading-7 text-white outline-none transition placeholder:text-white/20 focus:border-[#ffd400]/60 focus:bg-white/[0.05]"
           />
         </div>
@@ -288,9 +289,7 @@ export default function HireForm() {
         >
           {isSubmitting ? "Sending..." : "Send Project Inquiry"}
 
-          <span className="ml-3">
-            {isSubmitting ? "..." : "↗"}
-          </span>
+          <span className="ml-3">{isSubmitting ? "..." : "↗"}</span>
         </button>
       </div>
     </form>

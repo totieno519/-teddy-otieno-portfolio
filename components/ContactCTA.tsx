@@ -17,16 +17,16 @@ export default function ContactCTA() {
             </p>
 
             <h2 className="mt-6 text-4xl font-black tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-              Have an idea?
+              Have a project?
               <span className="block text-[#d9b600]">
                 Let&apos;s build it.
               </span>
             </h2>
 
             <p className="mt-7 max-w-2xl text-base leading-8 text-black/55 sm:text-lg">
-              Whether you need a professional website, web application or
-              custom digital system, tell me what you&apos;re trying to
-              accomplish and let&apos;s explore the right solution.
+              Have an idea, a business need or an existing website that needs
+              improvement? Tell me what you want to achieve and I&apos;ll help
+              you explore a practical digital solution.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">

@@ -27,6 +27,13 @@ const serviceDetails = [
   ],
 ];
 
+const serviceCtas = [
+  "Build My Website",
+  "Build My Web App",
+  "Build My System",
+  "Improve My Website",
+];
+
 export default function Services() {
   return (
     <section id="services" className="border-t border-white/10">
@@ -98,12 +105,12 @@ export default function Services() {
                 </ul>
               </div>
 
-              {/* CTA */}
+              {/* Client CTA */}
               <a
                 href="#contact"
                 className="mt-8 inline-flex items-center text-sm font-bold text-[#ffd400] transition-colors group-hover:text-black"
               >
-                Discuss your project
+                {serviceCtas[index]}
                 <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
